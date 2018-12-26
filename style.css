@@ -39,6 +39,9 @@ header{
   width: 2.446vw;
   height: auto;
 }
+.burgerDiv:hover{
+  cursor: pointer;
+}
 
 .burgerDiv div{
   background-color: rgb(243,112,7);
