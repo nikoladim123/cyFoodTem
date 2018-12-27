@@ -11,12 +11,20 @@
   src: url('fonts/RobotoSlab-Bold.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'RobotoSlab-Regular';
+  src: url('fonts/RobotoSlab-Regular.ttf') format('truetype');
+}
+@font-face {
   font-family: 'RobotoSlab-Light';
   src: url('fonts/RobotoSlab-Light.ttf') format('truetype');
 }
 
 body{
   margin: 0;
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 header{
@@ -185,6 +193,10 @@ main{
 }
 
 .yellowBoxBar{
+  box-shadow: 0px 0px 153px 3px rgba(0,0,0,0.38);
+  /* box-shadow: 0px 0px 156px -20px; */
+  /* box-shadow: 0px 0px 11.555vw -1.481vw ; */
+  /* box-shadow: 1px 2px 15.07vw 1.037vw rgba(0,0,0,0.75); */
   padding-top: 0.1px;
   position: relative;
   top: -5.777vw;
@@ -260,10 +272,12 @@ main{
 }
 
 .blackTextTwo p{
-  font-family: 'RobotoSlab-Bold';
+  font-family: 'RobotoSlab-Regular';
   font-size: 1.15vw;
   margin: 0;
   margin-bottom: 0.25vw;
+  font-weight: 400;
+  color:#232323;
 }
 
 .buttonsYellowBox{
@@ -312,4 +326,72 @@ main{
   background-size: 100% 100%;
   width: 18vw;
   height: 13.185vw;
+}
+/* Section from the */
+.fromTheSection{
+  padding: 0.1px;
+  overflow: hidden;
+  background-color: black;
+  height: 21.037vw;
+  width: 100%;
+}
+
+.fromTheSection p{
+  font-family: 'LeagueGothic-CondensedRegular';
+  position: relative;
+  text-align: center;
+  font-size:8.222vw;
+  margin: 0;
+  margin-top: 13.2vw;
+  color: white;
+}
+/* BAR SECTION */
+
+.barSection{
+  position: relative;
+  width: 100%;
+  height: 51.85vw;
+  background-size: 100% 100%;
+  background-image: url('img/sectionBarBackground.jpg');
+}
+
+.barPic{
+  position: relative;
+  background-size: 100% 100%;
+  background-image: url('img/png/Bar.png');
+  width: 12.814vw;
+  height: 7.70vw;
+  margin-left: 50%;
+  left:-6.47vw;
+  top:-0.7vw;
+  border: 1px solid red;
+}
+
+.threePicDiv{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid yellow;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 42.37vw;
+}
+
+.threePicDiv div{
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  width: 30vw;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.barPicOne{
+  background-image: url('img/barPicOne.jpg');
+}
+.barPicTwo{
+  background-image: url('img/barPicTwo.jpg');
+}
+.barPicThree{
+  background-image: url('img/barPicThree.jpg');
 }
