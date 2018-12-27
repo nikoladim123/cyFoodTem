@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Montserrat-Semi-Bold';
-  src: url('fonts/Montserrat-SemiBold.otf') format('truetype');
+  font-family: 'LeagueGothic-Regular';
+  src: url('fonts/LeagueGothic-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'LeagueGothic-CondensedRegular';
+  src: url('fonts/LeagueGothic-CondensedRegular.otf') format('truetype');
 }
 
 body{
@@ -18,10 +22,12 @@ header{
 
 .numberHeader{
   position: absolute;
+  padding-left: 3.26vw;
 }
 .numberHeader p{
+  font-family: 'LeagueGothic-Regular';
   color:rgb(243,112,7);
-  font-size: 2.92vw;
+  font-size: 3.4vw;
 }
 
 .boleroGril{
@@ -63,15 +69,13 @@ header{
 
 .grillText{
   margin-top: 6.152vw;
-  padding-left: 6.231vw;
+  padding-left: 10.75vw;
 }
 .grillText p{
-  font-family: 'Montserrat-Semi-Bold';
+  font-family: 'LeagueGothic-Regular';
   margin:0;
-  font-size: 4vw;
-  letter-spacing: -0.2vw;
-  transform: scale(0.75,1.55);
-  line-height: 5vw;
+  font-size: 6vw;
+  line-height: 4.889vw;
 }
 .grillText p:nth-child(1){color:white;}
 .grillText p:nth-child(2){color:rgb(213,5,5);}
@@ -80,6 +84,9 @@ header{
   position: absolute;
   top: 43.336vw;
   left: 20.203vw;
+}
+.buttonBoxHeader button:hover{
+  cursor: pointer;
 }
 .buttonBoxHeader button:nth-child(1){
   height: 3.632vw;
@@ -108,16 +115,6 @@ header{
   left: 38.5%;
 }
 
-.boleroFancyText{
-  margin-top: 3vw;
-  margin-left: 8vw;
-}
-.boleroFancyText p{
-  margin: 0;
-  color:rgb(255,234,0);
-  font-size: 2.3vw;
-}
-
 .wineDivSquare{
   transform: rotate(45deg);
   position: absolute;
@@ -127,7 +124,7 @@ header{
   height: 3.75vw;
   border: 0.296vw solid rgb(112,104,43);
   outline: 0.1482vw solid rgb(172,168,74);
-  margin-top: 40.477vw;
+  margin-top: 43.477vw;
   margin-left: 30%;
 }
 .wineTriangle{
