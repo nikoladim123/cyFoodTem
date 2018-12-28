@@ -21,6 +21,7 @@
 
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 
 button:hover{
@@ -364,13 +365,11 @@ main{
   margin-left: 50%;
   left:-6.47vw;
   top:-0.7vw;
-  border: 1px solid red;
 }
 
 .threePicDiv{
   display: flex;
   justify-content: space-between;
-  border: 1px solid yellow;
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -378,10 +377,8 @@ main{
   height: 42.37vw;
 }
 
-.threePicDiv div{
+.threePicDivClass{
   position: relative;
-  display: inline-block;
-  border: 1px solid black;
   width: 30vw;
   height: 100%;
   background-size: 100% 100%;
@@ -394,4 +391,309 @@ main{
 }
 .barPicThree{
   background-image: url('img/barPicThree.jpg');
+}
+.WINE,.COCKTAIL,.BEER{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 1px;
+  color: white;
+}
+
+.threePicDivClass div p:nth-child(1){
+  margin: 0;
+  font-family: 'RobotoSlab-Bold';
+  font-size: 2.666vw;
+  margin-bottom: -0.7vw;
+}
+
+.threePicDivClass div p:nth-child(2){
+  margin: 0;
+  font-family: 'LeagueGothic-Regular';
+  font-size: 8.148vw;
+}
+/* image section */
+.imageSection{
+  background-image: url('img/imageSection.jpg');
+  background-size: 100% 100%;
+  height: 21.111vw;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+.imageSection p{
+  text-align: center;
+  margin: 0;
+  margin-bottom: -2vw;
+  font-family: 'LeagueGothic-Regular';
+  font-size: 8.148vw;
+  color:white;
+}
+/* hamburger section */
+.hamburgerSection{
+  position: relative;
+  padding-top: 0.1px;
+  width: 100%;
+  height: 48.148vw;
+  background-size: 100% 100%;
+  background-image: url('img/hamburgerSection.jpg');
+}
+
+.menuPng{
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url('img/png/menu.png');
+  width: 12.453vw;
+  height: 8.524vw;
+  margin-left: 50%;
+  left:-6.228vw;
+  top: -0.8vw;
+}
+
+.hambugerButtonBox{
+  margin-top: 29.629vw;
+  margin-left: 67.40vw;
+}
+.hambugerButtonBox button{
+width: 10.888vw;
+height: 3.629vw;
+font-size: 1.2vw;
+font-family: 'RobotoSlab-Light';
+width: ;
+height: ;
+color: white;
+}
+.hambugerButtonBox button:nth-child(1){
+    margin-right: 1.481vw;
+  background:transparent;
+  border:0.148vw solid rgb(240,141,0);
+}
+.hambugerButtonBox button:nth-child(2){
+  background-color: rgb(240,141,0);
+  border: none;
+}
+
+.advertBox{
+  margin-top: 4.299vw;
+  display: flex;
+  justify-content: space-around;
+}
+.advertBox div{
+  width: 26.44vw;
+  height: 8.888vw;
+}
+.advertBox div:hover{
+  filter:contrast(100%) brightness(150%);
+  cursor: pointer;
+}
+.advertBox div:nth-child(1){
+  background-size: 100% 100%;
+  background-image: url('img/advertOne.jpg');
+}
+.advertBox div:nth-child(2){
+  background-size: 100% 100%;
+  background-image: url('img/advertTwo.jpg');
+}
+.advertBox div:nth-child(3){
+  background-size: 100% 100%;
+  background-image: url('img/advertThree.jpg');
+}
+
+/* image section two */
+.imageSectionTwo{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-image: url('img/imageSectionTwo.jpg');
+  width: 100%;
+  height: 27.65vw;
+}
+.imageSectionTwo p{
+  text-align: center;
+  margin: 0;
+  margin-bottom: -2vw;
+  font-family: 'LeagueGothic-Regular';
+  font-size: 8.148vw;
+  color:white;
+}
+/* black Band Menu */
+.blackBandMenu{
+  position: relative;
+  background-color: black;
+  height: 11.5vw;
+  width: 100%;
+}
+.blackBandMenuText{
+  background-size: 100% 100%;
+  background-image: url('img/png/menu.png');
+  position: relative;
+  margin-left: 50%;
+  top: -0.4vw;
+  left:-6.228vw;
+  width: 12.453vw;
+  height: 8.524vw;
+}
+/* grid Images Section */
+.gridImagesSection{
+  width: 100%;
+  height: 72.498vw;
+  display: grid;
+  grid-auto-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 4.447vw solid black;
+}
+.gridImagesSection div{
+  background-size: 100% 100%;
+}
+.gridImagesSection div p{
+  margin: 0;
+  text-align: center;
+  font-family: 'LeagueGothic-Regular';
+  color:white;
+  font-size: 5.337vw;
+  margin-top: 15.937vw;
+}
+.gridImagesSection div:nth-child(1){background-image: url('img/nineImageGrid/gridPicOne.jpg');}
+.gridImagesSection div:nth-child(2){background-image: url('img/nineImageGrid/gridPicTwo.jpg');}
+.gridImagesSection div:nth-child(3){background-image: url('img/nineImageGrid/gridPicThree.jpg');}
+.gridImagesSection div:nth-child(4){background-image: url('img/nineImageGrid/gridPicFour.jpg');}
+.gridImagesSection div:nth-child(5){background-image: url('img/nineImageGrid/gridPicFive.jpg');}
+.gridImagesSection div:nth-child(6){background-image: url('img/nineImageGrid/gridPicSix.jpg');}
+.gridImagesSection div:nth-child(7){background-image: url('img/nineImageGrid/gridPicSeven.jpg');}
+.gridImagesSection div:nth-child(8){background-image: url('img/nineImageGrid/gridPicEight.jpg');}
+.gridImagesSection div:nth-child(9){background-image: url('img/nineImageGrid/gridPicNine.jpg');}
+/* special Section */
+.specialSection{
+  width: 100%;
+  height: 66vw;
+}
+.specialSection p{
+  font-family: 'LeagueGothic-CondensedRegular';
+  font-size: 7.412vw;
+  margin: 0;
+  margin-top: 4.189vw;
+  text-align: center;
+}
+
+.specials{
+  position: relative;
+  background-size: 100% 100%;
+  background-image: url('img/png/Socials.png');
+  width: 18.38vw;
+  height: 6.523vw;
+  margin-left: 50%;
+  left: -9.19vw;
+  margin-top:-4vw;
+}
+
+.gridBoxSpecial{
+  width: 74.12%;
+  height: 44.477vw;
+  margin-left: 13%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 33% 33% 33%;
+  grid-gap: 0.222vw;
+}
+.gridBoxSpecial div{
+  background-size: 100% 100%;
+}
+.gridBoxSpecial div:nth-child(1) p{
+  writing-mode:tb-rl;
+  color: white;
+  font-size: 11.119vw;
+  margin: 0;
+  margin-top:2.965vw;
+
+}
+.gridBoxSpecial div:nth-child(1){
+  background-color: rgb(235,217,110);
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.gridBoxSpecial div:nth-child(2){
+  grid-row: 1/4;
+  grid-column: 2/3;
+  background-image: url('img/sixImageGrid/pizza.jpg');
+}
+.gridBoxSpecial div:nth-child(3){
+  grid-row: 1/2;
+  grid-column: 3/4;
+  background-image: url('img/sixImageGrid/wineGlass.jpg');
+}
+.gridBoxSpecial div:nth-child(4){
+  grid-row: 2/3;
+  grid-column: 3/4;
+  background-image: url('img/sixImageGrid/iceCream.jpg');
+}
+.gridBoxSpecial div:nth-child(5){
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-image: url('img/sixImageGrid/panCake.jpg');
+}
+.gridBoxSpecial div:nth-child(6){
+  grid-row: 3/4;
+  grid-column: 1/2;
+  background-image: url('img/sixImageGrid/threeIcecreams.jpg');
+}
+/* catering Section */
+.cateringSection{
+  padding-top: 0.1px;
+  background-size: 100% 100%;
+  background-image: url('img/cateringSection.jpg');
+  width: 100%;
+  height: 56.189vw;
+}
+.cateringSection p{
+  position: absolute;
+  font-family: 'LeagueGothic-Regular';
+  color:white;
+  margin: 0;
+  font-size: 7.412vw;
+  margin-top: 9.5vw;
+  margin-left: 12.676vw;
+}
+.events{
+  position: absolute;
+  margin-top: 14.82vw;
+  background-size: 100% 100%;
+  background-image: url('img/png/events.png');
+  width: 16.6vw;
+  height: 8.67vw;
+  margin-left: 25.945%;
+}
+.cateringSection button{
+  margin-top: 43.291vw;
+  margin-left: 68.05vw;
+  height: 3.632vw;
+  width: 20.83vw;
+  color: white;
+  background-color: transparent;
+  border: 0.148vw solid rgb(204,173,79);
+  font-size: 1.779vw;
+  font-family: 'RobotoSlab-Bold';
+}
+/* getin Touch Section */
+.getinTouchSection{
+  background-color: black;
+  width: 100%;
+  height: 92.66vw;
+}
+.getinTouchImageBox{
+  background-size: 100% 100%;
+  background-image: url('img/touchBGimage.jpg');
+  width: 100%;
+  height: 35.8vw;
+  border-top: 15.04vw solid black;
+}
+
+.footer{
+  height: 36.69vw;
+  background-color: rgb(196,20,20);
+  border-bottom: 2px solid rgb(217,185,86);
+
 }
