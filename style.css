@@ -38,9 +38,9 @@ header{
 }
 .vid{
   position: absolute;
-  left: 0px;
+  left: -50%;
   top: 0px;
-  width: 50%;
+  width: 100%;
 }
 
 .numberHeader{
