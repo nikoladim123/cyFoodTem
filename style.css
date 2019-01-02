@@ -30,17 +30,18 @@ button:hover{
 
 header{
   padding-top: 0.001px;
-  background-image: url('img/steak.jpg');
-  background-size: 100% 100%;
   width: 100%;
   height: 56.263vw;
   border-bottom: 17.123vw solid black;
+  overflow: hidden;
 }
 .vid{
+  overflow: hidden;
   position: absolute;
   left: -50%;
   top: 0px;
   width: 100%;
+  height: 56.263vw;
 }
 
 .numberHeader{
