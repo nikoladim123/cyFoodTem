@@ -24,20 +24,22 @@ body{
   overflow-x: hidden;
 }
 
+
 button:hover{
   cursor: pointer;
 }
 
 header{
-  padding-top: 0.001px;
+  padding-top: 1px;
   width: 100%;
   height: 56.263vw;
   border-bottom: 17.123vw solid black;
   overflow: hidden;
 }
 video{
-  width: 100%;
-  height: 102%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
 }
 .vid{
   overflow: hidden;
@@ -45,7 +47,7 @@ video{
   left: -50%;
   top: 0px;
   width: 100%;
-  height: 56.263vw;
+  height: 56.293vw;
 }
 
 .numberHeader{
@@ -697,15 +699,136 @@ color: white;
   height: 92.66vw;
 }
 .getinTouchImageBox{
+  position: relative;
   background-size: 100% 100%;
   background-image: url('img/touchBGimage.jpg');
   width: 100%;
-  height: 35.8vw;
+  height: 35.481vw;
   border-top: 15.04vw solid black;
+  z-index: 1;
 }
 
-.footer{
+.getInTouchYellowBox{
+  padding-top: 0.1px;
+  position: relative;
+  margin-left: 50%;
+  left:-29.5185vw;
+  margin-top: -5.777vw;
+  width: 59.037%;
+  height: 46.074vw;
+  background-color: rgb(217,185,86);
+}
+.getInTouchYellowBox h2{
+  font-family: 'RobotoSlab-Regular';
+  font-size: 2.962vw;
+  color: rgb(85,85,85);
+  margin-left: 4.74vw;
+  margin-top: 4.1vw;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-left: 7.629vw;
+}
+form div{
+  position: relative;
+  margin-top: 0.74vw;
+}
+form div label{
+  position: absolute;
+  font-size: 1.18vw;
+  margin-top: 0.666vw;
+}
+input{
+  background-color: rgb(217,185,86);
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-left: 4vw;
+  position: relative;
+  width: 33.333vw;
+  height: 2.814vw;
+}
+textarea{
+  background-color: rgb(217,185,86);
+  border: 2px solid black;
+  width: 33.1vw;
+  height: 13.33vw;
+  margin-left: 4vw;
+  margin-top: 2.222vw;
+}
+form button{
+  font-size: 1.333vw;
+  width: 10.814vw;
+  height: 3.037vw;
+  margin-left: 26.8vw;
+  margin-top: 1.185vw;
+  border: 2px solid black;
+  background-color: rgb(217,185,86);
+}
+
+.footerRed{
+  font-family: 'RobotoSlab-Regular';
+  padding-top: 0.1px;
+  position: relative;
   height: 36.69vw;
   background-color: rgb(196,20,20);
   border-bottom: 2px solid rgb(217,185,86);
+  text-align: center;
+}
+
+.boleroFooterImg{
+  position: absolute;
+  width: 46.74vw;
+  height: 15.037vw;
+  background-size: 100% 100%;
+  background-image: url('img/png/boleroFooter.png');
+  margin-left: 50%;
+  left:-23.37vw;
+  margin-top: 2.5vw;
+}
+
+.footerTextOne{
+  margin-top: 16vw;
+  font-size: 1.333vw;
+  margin-bottom: 3.2vw;
+}
+.footerTextOne p{
+  margin: 0;
+  color: rgb(255,152,51);
+}
+
+.footerTextTwo {
+  position: relative;
+  width: 20%;
+  margin-left: 50%;
+  left:-10%;
+  margin-bottom: 1.5vw;
+}
+.footerTextTwo p{
+  margin: 0;
+  font-size: 1.333vw;
+}
+.footerTextTwo a{
+  text-decoration: none;
+  color: rgb(255,152,51);
+  transition: 1s;
+}
+.footerTextTwo a:hover{
+  color:white;
+}
+.footerNumber p{
+  font-family: 'RobotoSlab-Bold';
+  margin: 0;
+  font-size: 2.666vw;
+  color: rgb(255,152,51);
+}
+
+.blackFooterText{
+  color:white;
+  text-align: center;
+}
+.blackFooterText p{
+  font-family: 'RobotoSlab-Bold';
+  margin: 0.25vw;
 }
