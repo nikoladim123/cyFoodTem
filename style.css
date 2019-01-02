@@ -35,6 +35,10 @@ header{
   border-bottom: 17.123vw solid black;
   overflow: hidden;
 }
+video{
+  width: 100%;
+  height: 102%;
+}
 .vid{
   overflow: hidden;
   position: absolute;
