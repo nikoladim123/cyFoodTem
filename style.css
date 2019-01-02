@@ -36,6 +36,12 @@ header{
   height: 56.263vw;
   border-bottom: 17.123vw solid black;
 }
+.vid{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+}
 
 .numberHeader{
   position: absolute;
@@ -202,7 +208,8 @@ main{
   position: relative;
   top: -5.777vw;
   left: 23.259vw;
-  background-color: rgb(223,201,118);
+  background-color: #f0cd3c;
+  /* background-color: rgb(223,201,118); */
   width: 53.7vw;
   height: 67.555vw;
 }
@@ -304,6 +311,7 @@ main{
 
 .numberYellowBox{
   font-family: 'LeagueGothic-CondensedRegular';
+  /* color: white; */
   color:rgb(243,112,7);
   font-size: 4.4vw;
   margin-left: 19.185vw;
@@ -695,5 +703,4 @@ color: white;
   height: 36.69vw;
   background-color: rgb(196,20,20);
   border-bottom: 2px solid rgb(217,185,86);
-
 }
