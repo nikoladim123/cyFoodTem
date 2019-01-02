@@ -524,6 +524,7 @@ color: white;
 .advertBox div{
   width: 26.44vw;
   height: 8.888vw;
+  transition: 0.3s;
 }
 .advertBox div:hover{
   filter:contrast(100%) brightness(150%);
@@ -588,11 +589,28 @@ color: white;
   border-bottom: 4.447vw solid black;
 }
 .gridImagesSection div{
+  z-index: 3;
+  position: relative;
   background-size: 100% 100%;
 }
 .gridImagesSection div:hover{
   cursor: pointer;
 }
+.gridImagesSection div::after{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.gridImagesSection div:hover:after{
+  background-color: #ffa806;
+  opacity: 0.8;
+}
+
 .gridImagesSection div p{
   margin: 0;
   text-align: center;
