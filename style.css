@@ -715,6 +715,8 @@ color: white;
 }
 
 .getInTouchYellowBox{
+  box-shadow: 0px 0px 153px 7px rgb(0,0,0,0.3);
+  /* box-shadow: 0px 0px 153px 3px rgba(0,0,0,0.38); */
   padding-top: 0.1px;
   position: relative;
   margin-left: 50%;
@@ -748,8 +750,8 @@ form div label{
 }
 input{
   background-color: rgb(217,185,86);
-  border: 2px solid black;
-  border-radius: 15px;
+  border: 2px solid #555555;
+  border-radius: 5px;
   margin-left: 4vw;
   position: relative;
   width: 33.333vw;
@@ -757,7 +759,7 @@ input{
 }
 textarea{
   background-color: rgb(217,185,86);
-  border: 2px solid black;
+  border: 2px solid #555555;
   width: 33.1vw;
   height: 13.33vw;
   margin-left: 4vw;
@@ -835,6 +837,6 @@ form button{
   text-align: center;
 }
 .blackFooterText p{
-  font-family: 'RobotoSlab-Bold';
+  font-family: 'RobotoSlab-Light';
   margin: 0.25vw;
 }
