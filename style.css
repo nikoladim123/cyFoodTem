@@ -591,6 +591,7 @@ color: white;
   border-bottom: 4.447vw solid black;
 }
 .gridImagesSection div{
+  overflow: hidden;
   z-index: 3;
   position: relative;
   background-size: 100% 100%;
@@ -611,6 +612,26 @@ color: white;
 .gridImagesSection div:hover:after{
   background-color: #ffa806;
   opacity: 0.8;
+}
+.gridImagesSection div::before{
+  content: '';
+  display: block;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  width: 20%;
+  height: 180%;
+  top: 1px;
+  bottom: 1px;
+  /* opacity: 0.2;  */
+  top:-120%;
+  left: 10%;
+  transition: 2s;
+  transform: rotate(45deg);
+  /* z-index: 5; */
+}
+.gridImagesSection div:hover:before{
+  top:100%;
+  left:100%;
 }
 
 .gridImagesSection div p{
@@ -892,7 +913,7 @@ form button{
   margin: 0.25vw;
 }
 
-/* test */
+/* test button animation, feel free to delete*/
 button{
   position: relative;
   overflow: hidden;
