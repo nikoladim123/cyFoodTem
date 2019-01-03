@@ -961,6 +961,7 @@ button:hover:after{
   overflow: hidden;
 }
 .closeBox{
+  border: 1px solid black;
   position: relative;
   margin-left: 70%;
   margin-top: 2vw;

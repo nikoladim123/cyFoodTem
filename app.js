@@ -6,16 +6,16 @@ var wholePageOverlay = document.getElementsByClassName('wholePageOverlay')[0];
 var closeBox = document.getElementsByClassName('closeBox')[0];
 burgerDiv.addEventListener('click',function(){
   burgerMenuOverlayWhite.style.width = "100%"
-  wholePageOverlay.style.filter = 'blur(10px)'
   setTimeout(function(){
     burgerOverlayBlackBox.style.width = '20vw'
+    wholePageOverlay.style.filter = 'blur(10px)'
   },1000)
 })
 
 closeBox.addEventListener('click',function(){
-  burgerMenuOverlayWhite.style.width = "0%"
   wholePageOverlay.style.filter = 'blur(0px)'
   setTimeout(function(){
+    burgerMenuOverlayWhite.style.width = "0%"
     burgerOverlayBlackBox.style.width = '0vw'
   },700)
 })
