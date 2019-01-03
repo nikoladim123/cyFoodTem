@@ -935,3 +935,51 @@ button:hover:after{
   opacity: 0.5;
   left:0%;
 }
+/* BURGER MENU OVERLAY */
+.wholePageOverlay{
+  transition: 1s;
+  filter: blur(0px);
+}
+
+.burgerMenuOverlayWhite{
+  transition: 1s;
+  position: fixed;
+  right: 0px;
+  width: 0%;
+  height: 100vh;
+  background-color: rgb(255,255,255,0.5);
+  z-index: 1;
+}
+.burgerOverlayBlackBox{
+  color: white;
+  transition: 0.5s;
+  position: absolute;
+  right: 0px;
+  background-color: black;
+  width: 0%;
+  height: 100vh;
+  overflow: hidden;
+}
+.closeBox{
+  position: relative;
+  margin-left: 70%;
+  margin-top: 2vw;
+  width:2vw;
+  height: 2vw;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.closeBox:hover{
+  cursor: pointer;
+  transform: rotate(225deg);
+}
+.closeBox div{
+  height: 2px;
+  background-color: white;
+  width: 100%;
+}
+.closeBox div:nth-child(1){
+  margin-top: 1vw;
+  margin-bottom: -2px;
+  transform: rotate(90deg);
+}
