@@ -85,12 +85,11 @@ window.onscroll = function(){
     specialsAnim();
 }
 //3 pic glass animation
-var barPicOne = document.getElementsByClassName('barPicOne')[0];
-var barPicThree = document.getElementsByClassName('barPicThree')[0];
+var threePicDiv = document.getElementsByClassName('threePicDiv')[0];
+var barSection = document.getElementsByClassName('barSection')[0];
 function threeGlasAnim(){
-  if(barPicOne.getBoundingClientRect().top - (window.innerHeight/1.5)<= 0){
-    barPicOne.style.left = '0';
-    barPicThree.style.right = '0';
+  if(barSection.getBoundingClientRect().top - (window.innerHeight/5)<= 0){
+    threePicDiv.style.bottom = '0'
   }
 }
 //specials reveal anim specials connectWithUsParagraph
