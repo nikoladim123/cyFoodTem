@@ -66,3 +66,12 @@ threePicDivClass[2].addEventListener('mouseover',function(){
     },1500)
   }
 });
+// cheap animation change backgroundColor
+var main = document.getElementsByClassName('mainMain')[0];
+var yellowBoxBar = document.getElementsByClassName('yellowBoxBar')[0];
+window.onscroll = function(){
+    if(main.getBoundingClientRect().top - window.innerHeight <= 0){
+      yellowBoxBar.style.backgroundColor = '#f0cd3c'
+        console.log("TRIGGER: top of div reached.");
+    }
+}
