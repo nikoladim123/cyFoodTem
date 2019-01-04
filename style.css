@@ -27,7 +27,11 @@ body{
   margin: 0;
   overflow-x: hidden;
 }
+button{
+  transition: 1s;
+}
 button:hover{
+  background-color: rgb(200,200,200) !important;
   cursor: pointer;
 }
 
@@ -51,7 +55,7 @@ video{
   left: -50%;
   top: 0px;
   width: 100%;
-  height: 56.293vw;
+  height: 56.3vw;
 }
 .blackLayer{
   position: absolute;
@@ -118,8 +122,21 @@ video{
   font-size: 6vw;
   line-height: 5.5vw;
 }
-.grillText p:nth-child(1){color:white;}
-.grillText p:nth-child(2){color:rgb(213,5,5);}
+.grillTextAnimOne, .grillTextAnimTwo{
+  overflow: hidden;
+}
+.grillTextAnimOneParagraph{
+  transition: 1s;
+  color:white;
+  top:6vw;
+  position:relative;
+ }
+.grillTextAnimTwoParagraph{
+  transition: 1s;
+  color:rgb(213,5,5);
+  top:-6vw;
+  position:relative;
+}
 
 .buttonBoxHeader{
   position: absolute;
@@ -250,15 +267,24 @@ main{
   color:white;
   margin: 0;
 }
-.whiteTextYellowBox p:nth-child(1){
+.yellowParaAnimOne{
+  position: relative;
+  transition: 1s;
+  top:8vw;
   font-size:5.8vw;
   margin-bottom: -1.5vw;
 }
-.whiteTextYellowBox p:nth-child(2){
+.yellowParaAnimTwo{
+  position: relative;
+  transition: 1s;
+  top:-5vw;
   opacity: 0.46;
   font-family: 'RobotoSlab-Bold';
   font-size:1.5vw;
   margin-bottom: 1vw;
+}
+.yellowBoxAnimDiv{
+  overflow: hidden;
 }
 
 .twenty{
@@ -334,20 +360,22 @@ main{
 }
 
 .lemon{
+  transition: 1s;
   position: absolute;
   background-image: url('img/png/lemon.png');
   background-size: 100% 100%;
   bottom: 0px;
-  left: 0px;
+  left: -1vw;
   width: 30.37vw;
   height: 27.555vw;
 }
 
 .mushroom{
+  transition: 1s;
   position: absolute;
   background-image: url('img/png/mushrooms.png');
   bottom:-3.5vw;
-  right: 16.592vw;
+  right: 15.592vw;
   background-size: 100% 100%;
   width: 18vw;
   height: 13.185vw;
@@ -361,7 +389,9 @@ main{
   width: 100%;
 }
 
-.fromTheSection p{
+.fromTheSectionParagAnim{
+  transition: 1s;
+  top: 10vw;
   font-family: 'LeagueGothic-CondensedRegular';
   position: relative;
   text-align: center;
@@ -378,11 +408,13 @@ main{
   height: 51.85vw;
   background-size: 100% 100%;
   background-image: url('img/sectionBarBackground.jpg');
-  overflow: hidden;
 }
 
 .barPic{
+  transition: 1s;
+  background-position: 0 -10vw;
   position: relative;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url('img/png/Bar.png');
   width: 12.814vw;
@@ -455,12 +487,11 @@ main{
   transition: 2s;
   transform: rotate(45deg);
 }
-/* .glanceDiv:hover{
-  top:100%;
-  left: 100%;
-} */
+
 /* image section */
 .imageSection{
+  position: relative;
+  z-index: 1;
   background-image: url('img/imageSection.jpg');
   background-size: 100% 100%;
   height: 21.111vw;
@@ -470,7 +501,10 @@ main{
   justify-content: center;
   overflow: hidden;
 }
-.imageSection p{
+.imageSectionParagAnim{
+  transition: 1s;
+  top: 10vw;
+  position: relative;
   text-align: center;
   margin: 0;
   margin-bottom: -2vw;
@@ -490,6 +524,9 @@ main{
 
 .menuPng{
   position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 -9vw;
+  transition: 1s;
   background-size: 100% 100%;
   background-image: url('img/png/menu.png');
   width: 12.453vw;
@@ -560,7 +597,10 @@ color: white;
   width: 100%;
   height: 27.65vw;
 }
-.imageSectionTwo p{
+.imageSectionTwoParagAnim{
+  position: relative;
+  transition: 1s;
+  top: 10vw;
   text-align: center;
   margin: 0;
   margin-bottom: -2vw;
@@ -576,6 +616,9 @@ color: white;
   width: 100%;
 }
 .blackBandMenuText{
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-position: 0 -10vw;
   background-size: 100% 100%;
   background-image: url('img/png/menu.png');
   position: relative;
@@ -757,16 +800,25 @@ color: white;
   width: 100%;
   height: 56.189vw;
 }
-.cateringSection p{
+.cateringBoxAnim{
   position: absolute;
   font-family: 'LeagueGothic-Regular';
   color:white;
-  margin: 0;
   font-size: 7.412vw;
   margin-top: 9.5vw;
   margin-left: 12.676vw;
+  overflow: hidden;
+}
+.cateringParagAnim{
+  position: relative;
+  transition: 1s;
+  top: 10vw;
+  margin: 0;
 }
 .events{
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-position: 0 -10vw;
   position: absolute;
   margin-top: 14.82vw;
   background-size: 100% 100%;
@@ -952,31 +1004,10 @@ form button{
 .blackFooterText p{
   opacity: 0.5;
   font-family: 'RobotoSlab-Light';
+  font-size: 0.8vw;
   margin: 0.25vw;
 }
 
-/* test button animation, feel free to delete*/
-button{
-  position: relative;
-  overflow: hidden;
-  transition: 1s;
-}
-button::after{
-  transition: 1s;
-  content: '';
-  display: block;
-  position: absolute;
-  left: 100%;
-  top:0px;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(to right, rgb(255,255,255,0),30%,red,80%, yellow);
-  opacity: 0;
-}
-button:hover:after{
-  opacity: 0.5;
-  left:0%;
-}
 /* BURGER MENU OVERLAY */
 .wholePageOverlay{
   transition: 1s;
@@ -990,7 +1021,7 @@ button:hover:after{
   width: 0%;
   height: 100vh;
   background-color: rgb(255,255,255,0.5);
-  z-index: 1;
+  z-index: 3;
 }
 .burgerOverlayBlackBox{
   color: white;
@@ -1040,4 +1071,42 @@ button:hover:after{
 }
 .burgerBlackBoxText a:hover{
   color:yellow;
+}
+/* STICKY MENU */
+.stickyMenu{
+  transition: 0.5s;
+  z-index: 2;
+  position: fixed;
+  height: 0vw;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stickyNumber p{
+  position: relative;
+  font-family: 'LeagueGothic-Regular';
+  color:rgb(243,112,7);
+  font-size: 3.4vw;
+  margin: 0;
+  margin-top: 10%;
+
+}
+.stickyNumber{
+  margin-left: -5vw;
+}
+.stickyBoleroPic{
+  background-image: url('img/png/stickyBolero.png');
+  width: 5.666vw;
+  height: 6.185vw;
+  background-size: 100% 100%;
+  margin-left: -5.666vw;
+}
+.stickyBurgerDiv{
+  margin: 0;
+  padding: 0;
+  margin-top: 3%;
 }
