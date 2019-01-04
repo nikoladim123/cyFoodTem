@@ -402,18 +402,21 @@ main{
 }
 
 .threePicDivClass{
+  transition: 1s;
   position: relative;
   width: 30vw;
   height: 100%;
   background-size: 100% 100%;
 }
 .barPicOne{
+  left: 34.8%;
   background-image: url('img/barPicOne.jpg');
 }
 .barPicTwo{
   background-image: url('img/barPicTwo.jpg');
 }
 .barPicThree{
+  right: 34.8%;
   background-image: url('img/barPicThree.jpg');
 }
 .WINE,.COCKTAIL,.BEER{
@@ -659,17 +662,26 @@ color: white;
   width: 100%;
   height: 66vw;
 }
-.specialSection p{
+.connectWithUsAnimBox{
+  overflow: hidden;
+}
+.connectWithUsParagraph{
+  transition: 1s;
+  position: relative;
   font-family: 'LeagueGothic-CondensedRegular';
   font-size: 7.412vw;
   margin: 0;
   margin-top: 4.189vw;
   text-align: center;
+  top:200px;
 }
 
 .specials{
+  transition: 1s;
   position: relative;
   background-size: 100% 100%;
+  background-repeat:  no-repeat;
+  background-position: 0 -200px;
   background-image: url('img/png/Socials.png');
   width: 18.38vw;
   height: 6.523vw;
@@ -794,7 +806,9 @@ color: white;
   margin-top: -5.777vw;
   width: 59.037%;
   height: 46.074vw;
-  background-color: rgb(217,185,86);
+  background-color: black;
+  transition: 2s;
+  /* background-color: rgb(217,185,86); */
 }
 .getInTouchYellowBox h2{
   font-family: 'RobotoSlab-Regular';
