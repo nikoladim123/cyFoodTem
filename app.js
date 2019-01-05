@@ -38,7 +38,6 @@ function closeBoxFun(){
 //<a> slider close on click
 var closeMeClass = document.getElementsByClassName('closeMeClass');
 for(var i=0;i<closeMeClass.length;i++){
-  console.log(closeMeClass[i]);
   closeMeClass[i].addEventListener('click',function(){
     closeBoxFun();
   });

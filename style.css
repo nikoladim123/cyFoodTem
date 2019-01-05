@@ -18,6 +18,9 @@
   font-family: 'RobotoSlab-Light';
   src: url('fonts/RobotoSlab-Light.ttf') format('truetype');
 }
+html {
+  scroll-behavior: smooth;
+}
 
 a{
   text-decoration: none;
@@ -56,7 +59,7 @@ video{
   left: -50%;
   top: 0px;
   width: 100%;
-  height: 56.3vw;
+  height: 56.4vw;
 }
 .blackLayer{
   position: absolute;
