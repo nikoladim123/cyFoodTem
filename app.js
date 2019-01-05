@@ -110,6 +110,7 @@ window.onscroll = function(e){
     fromTheSectionAnim();
     kidsMenuAnim();
     ourMenuAnim();
+    shroomsAnim();
     cateringAnimm();
     stickyMenuFunc();
 }
@@ -185,7 +186,7 @@ function cateringAnimm(){
 //Animate his lemons and mushrooms
 var lemon = document.getElementsByClassName('lemon')[0];
 var mushroom = document.getElementsByClassName('mushroom')[0];
-function cateringAnim(){
+function shroomsAnim(){
   if(mushroom.getBoundingClientRect().top - (window.innerHeight/1.2)<= 0){
     lemon.style.left = '0';
     mushroom.style.right = '16.592vw';
@@ -195,7 +196,7 @@ function cateringAnim(){
 var stickyMenu = document.getElementsByClassName('stickyMenu')[0];
 function stickyMenuFunc(){
   if(this.oldScroll > this.scrollY && window.scrollY > 1 && stickySwitch===0){
-    stickyMenu.style.height = '7vw';
+    stickyMenu.style.height = '7.2vw';
   }
   else {
     stickyMenu.style.height = '0vw';

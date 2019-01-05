@@ -952,6 +952,14 @@ form button{
   background-color: white;
   color:rgb(186,19,19);
   margin-left: 1vw;
+  transition: 0.3s;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover,
+.fa-snapchat-ghost:hover{
+  background-color: rgb(217,185,86);
 }
 
 .boleroFooterImg{
@@ -1008,8 +1016,9 @@ form button{
 .blackFooterText p{
   opacity: 0.5;
   font-family: 'RobotoSlab-Light';
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   margin: 0.25vw;
+  margin-top: 0.35vw;
 }
 
 /* BURGER MENU OVERLAY */
@@ -1096,7 +1105,7 @@ form button{
   color:rgb(243,112,7);
   font-size: 3.4vw;
   margin: 0;
-  margin-top: 10%;
+  margin-top: 3.5vw;
 
 }
 .stickyNumber{
@@ -1104,14 +1113,14 @@ form button{
 }
 .stickyBoleroPic{
   background-image: url('img/png/stickyBolero.png');
-  width: 5.666vw;
-  height: 6.185vw;
+  width: 6.666vw;
+  height: 7.185vw;
   background-size: 100% 100%;
-  margin-left: -10.666vw;
+  margin-left: -10.7vw;
 }
 .stickyBurgerDiv{
   margin: 0;
   padding: 0;
-  margin-top: 3%;
-  margin-right: 5vw;
+  margin-top: 3.261vw;
+  margin-right: 4.9vw;
 }
