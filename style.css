@@ -33,6 +33,7 @@ button{
 button:hover{
   background-color: rgb(200,200,200) !important;
   cursor: pointer;
+  border-color: transparent !important;
 }
 
 header{
@@ -893,7 +894,7 @@ form div label{
 }
 input{
   background-color: rgb(217,185,86);
-  border: 2px solid #555555;
+  border: 1px solid #555555;
   border-radius: 5px;
   margin-left: 4vw;
   position: relative;
@@ -902,7 +903,7 @@ input{
 }
 textarea{
   background-color: rgb(217,185,86);
-  border: 2px solid #555555;
+  border: 1px solid #555555;
   width: 33.1vw;
   height: 13.33vw;
   margin-left: 4vw;
@@ -938,16 +939,16 @@ form button{
   margin-right: 1.481vw;
 }
 .fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube, .fa-snapchat-ghost {
-  padding: 0.4vw;
+  padding: 0.3vw;
   font-size: 1.6vw !important;
-  width: 1.6vw;
-  height:1.6vw;
+  width: 1.4vw;
+  height:1.4vw;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
   background-color: white;
   color:rgb(186,19,19);
-  margin-left: 1.185vw;
+  margin-left: 1vw;
 }
 
 .boleroFooterImg{
@@ -1083,7 +1084,7 @@ form button{
   border-bottom: 1px solid gray;
   overflow: hidden;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .stickyNumber p{
@@ -1096,17 +1097,18 @@ form button{
 
 }
 .stickyNumber{
-  margin-left: -5vw;
+  margin-left: 3.2vw;
 }
 .stickyBoleroPic{
   background-image: url('img/png/stickyBolero.png');
   width: 5.666vw;
   height: 6.185vw;
   background-size: 100% 100%;
-  margin-left: -5.666vw;
+  margin-left: -10.666vw;
 }
 .stickyBurgerDiv{
   margin: 0;
   padding: 0;
   margin-top: 3%;
+  margin-right: 5vw;
 }

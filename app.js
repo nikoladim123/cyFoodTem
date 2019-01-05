@@ -25,15 +25,24 @@ burgerDiv[1].addEventListener('click',function(){
 })
 
 closeBox.addEventListener('click',function(){
+  closeBoxFun();
+});
+function closeBoxFun(){
   stickySwitch = 0;
-  wholePageOverlay.style.filter = 'blur(0px)'
+  wholePageOverlay.style.filter = 'blur(0px)';
   setTimeout(function(){
-    burgerMenuOverlayWhite.style.width = "0%"
-    burgerOverlayBlackBox.style.width = '0vw'
+    burgerMenuOverlayWhite.style.width = "0%";
+    burgerOverlayBlackBox.style.width = '0vw';
   },700)
-})
-
-
+}
+//<a> slider close on click
+var closeMeClass = document.getElementsByClassName('closeMeClass');
+for(var i=0;i<closeMeClass.length;i++){
+  console.log(closeMeClass[i]);
+  closeMeClass[i].addEventListener('click',function(){
+    closeBoxFun();
+  });
+}
 //Glimmer light animation fail.
 var threePicDivClass = document.getElementsByClassName('threePicDivClass');
 var glanceDiv = document.getElementsByClassName('glanceDiv');
@@ -102,7 +111,7 @@ window.onscroll = function(e){
     fromTheSectionAnim();
     kidsMenuAnim();
     ourMenuAnim();
-    cateringAnim();
+    cateringAnimm();
     stickyMenuFunc();
 }
 //3 pic glass animation
@@ -168,8 +177,8 @@ function ourMenuAnim(){
 //CATTERING SECTION
 var cateringParagAnim = document.getElementsByClassName('cateringParagAnim')[0];
 var events = document.getElementsByClassName('events')[0];
-function cateringAnim(){
-  if(events.getBoundingClientRect().top - (window.innerHeight/1.2)<= 0){
+function cateringAnimm(){
+  if(cateringParagAnim.getBoundingClientRect().top - (window.innerHeight/1.2)<= 0){
     cateringParagAnim.style.top = '0';
     events.style.backgroundPosition = '0 0';
   }
@@ -180,7 +189,7 @@ var mushroom = document.getElementsByClassName('mushroom')[0];
 function cateringAnim(){
   if(mushroom.getBoundingClientRect().top - (window.innerHeight/1.2)<= 0){
     lemon.style.left = '0';
-    mushroom.style.right = '16.592vw'
+    mushroom.style.right = '16.592vw';
   }
 }
 //STYCKY Menu
