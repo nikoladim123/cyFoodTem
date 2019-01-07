@@ -18,6 +18,25 @@
   font-family: 'RobotoSlab-Light';
   src: url('fonts/RobotoSlab-Light.ttf') format('truetype');
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+  position: absolute;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  display: none;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #888;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,6 +46,7 @@ a{
 }
 
 body{
+  width: 100vw;
   margin: 0;
   overflow-x: hidden;
 }
@@ -1030,10 +1050,10 @@ form button{
 .burgerMenuOverlayWhite{
   transition: 1s;
   position: fixed;
-  right: 0px;
-  width: 0%;
+  right: -10px;
+  width: 0vw;
   height: 100vh;
-  background-color: rgb(255,255,255,0.5);
+  background-color: rgb(231,231,231,0.9);
   z-index: 3;
 }
 .burgerOverlayBlackBox{
@@ -1074,10 +1094,12 @@ form button{
   margin-left: 10%;
 }
 .burgerBlackBoxText h2{
-  font-size: 3vw;
+  font-family: 'LeagueGothic-Regular';
+  font-size: 4vw;
 }
 .burgerBlackBoxText p{
-  font-size: 2vw;
+  font-family: 'RobotoSlab-Regular';
+  font-size: 1.5vw;
 }
 .burgerBlackBoxText a{
   color: white;
@@ -1091,7 +1113,7 @@ form button{
   z-index: 2;
   position: fixed;
   height: 0vw;
-  width: 100%;
+  width: 100vw;
   background-color: black;
   border-bottom: 1px solid gray;
   overflow: hidden;
@@ -1123,4 +1145,199 @@ form button{
   padding: 0;
   margin-top: 3.261vw;
   margin-right: 4.9vw;
+}
+/* PORTRAIT VIEW PORTRAIT VIEW PORTRAIT VIEW */
+/* PORTRAIT VIEW PORTRAIT VIEW PORTRAIT VIEW */
+/* PORTRAIT VIEW PORTRAIT VIEW PORTRAIT VIEW */
+/* PORTRAIT VIEW PORTRAIT VIEW PORTRAIT VIEW */
+@media (orientation:portrait) {
+  header{
+    height: 132vw;
+    border-bottom: 36.875vw solid black;
+  }
+  video{
+    display: none;
+  }
+  .vid{
+    background-size: 50% 100%;
+    background-image: url('img/mobile/mobileSteak.jpg');
+    height: 132.81vw;
+  }
+  .blackLayer{
+    display: none;
+  }
+  .numberHeader p{
+    display: none;
+  }
+  .winePng{
+    width: 68.75vw;
+    height: 156.25vw;
+    margin-left: 50%;
+    left:-28vw;
+  }
+  .grillText{
+    display: none;
+  }
+  .buttonBoxHeader{
+    display: none;
+  }
+  .boleroGril{
+    height: 132.81vw;
+  }
+  .burgerDivMob{
+    width: 10.31vw;
+    margin: 0;
+    margin-left:34.37vw;
+    margin-top: 6.25vw;
+  }
+  .burgerDivMob div{
+    height: 10px;
+    margin-top: 1vw;
+  }
+  .wineDivSquare{
+    margin-top: 105.624vw;
+    width: 10.416vw;
+    height: 10.416vw;
+  }
+  .wineTriangle{
+    border: 4vw solid transparent;
+    border-top: 4vw solid rgb(229,255,100);
+    top: 2.272vw;
+    left: 2.272vw;
+  }
+  @keyframes wineTriangle {
+    0%{
+      opacity: 1;
+      top: 5.272vw;
+      left: 5.272vw;
+    }
+    100%{
+      opacity: 0;
+      top: 0.5vw;
+      left: 0.5vw;
+    }
+  }
+  /* MAIN SECTION*/
+  main{
+    height: 159.3vw;
+    background-image: none;
+  }
+  .yellowBoxBar{
+    position: relative;
+    margin: 0;
+    left:0;
+    width: 100%;
+    height: 159.3vw;
+  }
+  .whiteLine{
+    width: 56.25vw;
+    height: 4.25vw;
+    left: -28.125vw;
+  }
+  .yellowBoxAnimDivMob{
+    margin-bottom: -3vw;
+  }
+  .yellowParaAnimOne{
+    font-size: 13vw;
+    margin: 0;
+  }
+  .yellowParaAnimTwo{
+    margin: 0;
+    font-size: 4vw;
+  }
+  .twenty{
+    position: relative;
+    margin-left: 50%;
+    width: 75vw;
+    height: 35.93vw;
+    left:-37.5vw;
+  }
+  .twentyYearsText{
+    font-size: 2vw;
+  }
+  .blackTextOne{
+    padding-left: 5vw;
+    padding-right: 1.5vw;
+  }
+  .blackTextOne p{
+    margin-left: 1vw;
+    display: inline;
+    font-size:3.9vw;
+    color:rgb(64,64,64);
+  }
+  .blackTextTwo{
+    margin-top: 4vw;
+    margin-left: 7.81vw;
+  }
+  .blackTextTwo p{
+    font-size:4vw;
+  }
+  .buttonsYellowBox{
+    margin: 0;
+    margin-top: 10.375vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .buttonsYellowBox button:nth-child(1),.buttonsYellowBox button:nth-child(2){
+    width: 39.68vw;
+    height: 12.5vw;
+    margin: 0;
+    border-width: 4px;
+    font-size: 4.687vw;
+  }
+  .numberYellowBox{
+    margin: 0;
+    margin-top: 7.812vw;
+    text-align: center;
+    font-size: 12.5vw;
+  }
+  .mushroom{
+    margin: 0;
+    width: 30vw;
+    height: 30vw;
+    margin-right: -20vw;
+  }
+  /* FROM THE SSECTION */
+  .fromTheSection{
+    height: 43.75vw;
+  }
+  .fromTheSectionParagAnim{
+    margin-top:23vw;
+    font-size: 17.81vw;
+  }
+  /* BAR SECTION */
+  .barPic{
+    width: 29.125vw;
+    height: 17.25vw;
+    left: -14.55vw;
+    top: -5vw;
+  }
+  .barSection{
+    height: 129.68vw;
+    background-size: 250% 100%;
+    background-position: 40% center;
+  }
+  .threePicDiv{
+    display: block;
+    height: 106.25vw;
+  }
+  .barPicTwo , .barPicThree{
+    display: none;
+  }
+  .barPicOne{
+    margin-left: 50%;
+    top: 5vw;
+    left: -39.05vw;
+    width: 78.125vw;
+    height: 106.25vw;
+    z-index: 2;
+  }
+
+  .threePicDivClass div p:nth-child(1){
+    font-size: 6vw;
+  }
+  .threePicDivClass div p:nth-child(2){
+    font-size: 18vw;
+  }
+
 }

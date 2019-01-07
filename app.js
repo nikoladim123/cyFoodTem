@@ -16,7 +16,7 @@ burgerDiv[0].addEventListener('click',function(){
 })
 burgerDiv[1].addEventListener('click',function(){
   stickySwitch =1;
-  burgerMenuOverlayWhite.style.width = "100%";
+  burgerMenuOverlayWhite.style.width = "101vw";
   stickyMenu.style.height = '0vw';
   setTimeout(function(){
     burgerOverlayBlackBox.style.width = '20vw';
@@ -96,8 +96,13 @@ var getInTouchYellowBox = document.getElementsByClassName('getInTouchYellowBox')
 
 //WINDOW ONSCROLL FUNCTION CALLLL
 window.onscroll = function(e){
-    if(main.getBoundingClientRect().top - window.innerHeight <= 0){
-      yellowBoxBar.style.backgroundColor = '#f0cd3c';
+    if(main.getBoundingClientRect().top - window.innerHeight <= 0 ){
+      if( window.innerWidth > window.innerHeight){
+        yellowBoxBar.style.backgroundColor = '#f0cd3c';
+      }
+      else{
+        yellowBoxBar.style.backgroundColor = 'rgb(221,194,107)';
+      }
     }
     //cheap animation contact
     if(getinTouchImageBox.getBoundingClientRect().top - (window.innerHeight/1.5)<= 0){
