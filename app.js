@@ -6,23 +6,24 @@ var wholePageOverlay = document.getElementsByClassName('wholePageOverlay')[0];
 var closeBox = document.getElementsByClassName('closeBox')[0];
 var stickySwitch = 0;
 burgerDiv[0].addEventListener('click',function(){
-  stickySwitch =1;
-  burgerMenuOverlayWhite.style.width = "100%";
-  stickyMenu.style.height = '0vw';
-  setTimeout(function(){
-    burgerOverlayBlackBox.style.width = '20vw';
-    wholePageOverlay.style.filter = 'blur(10px)';
-  },1000)
+  openMenu();
 })
 burgerDiv[1].addEventListener('click',function(){
+  openMenu();
+})
+function openMenu(){
   stickySwitch =1;
-  burgerMenuOverlayWhite.style.width = "101vw";
+  burgerMenuOverlayWhite.style.width = "101%";
   stickyMenu.style.height = '0vw';
   setTimeout(function(){
+    if(window.innerWidth > window.innerHeight){
     burgerOverlayBlackBox.style.width = '20vw';
+  }else{
+    burgerOverlayBlackBox.style.width = '50vw';
+  }
     wholePageOverlay.style.filter = 'blur(10px)';
   },1000)
-})
+}
 
 closeBox.addEventListener('click',function(){
   closeBoxFun();
@@ -201,7 +202,11 @@ function shroomsAnim(){
 var stickyMenu = document.getElementsByClassName('stickyMenu')[0];
 function stickyMenuFunc(){
   if(this.oldScroll > this.scrollY && window.scrollY > 1 && stickySwitch===0){
-    stickyMenu.style.height = '7.2vw';
+    if(window.innerWidth > window.innerHeight){
+        stickyMenu.style.height = '7.2vw';
+    }else{
+      stickyMenu.style.height = '17vw';
+    }
   }
   else {
     stickyMenu.style.height = '0vw';
