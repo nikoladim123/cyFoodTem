@@ -1151,6 +1151,9 @@ form button{
 /* PORTRAIT VIEW PORTRAIT VIEW PORTRAIT VIEW */
 /* PORTRAIT VIEW PORTRAIT VIEW PORTRAIT VIEW */
 @media (orientation:portrait) {
+  ::-webkit-scrollbar{
+    display: none;
+  }
   header{
     height: 132vw;
     border-bottom: 36.875vw solid black;
@@ -1292,10 +1295,7 @@ form button{
     font-size: 12.5vw;
   }
   .mushroom{
-    margin: 0;
-    width: 30vw;
-    height: 30vw;
-    margin-right: -20vw;
+    display: none;
   }
   /* FROM THE SSECTION */
   .fromTheSection{
