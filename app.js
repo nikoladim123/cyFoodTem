@@ -193,7 +193,7 @@ function cateringAnimm(){
 var lemon = document.getElementsByClassName('lemon')[0];
 var mushroom = document.getElementsByClassName('mushroom')[0];
 function shroomsAnim(){
-  if(mushroom.getBoundingClientRect().top - (window.innerHeight/1.2)<= 0){
+  if(lemon.getBoundingClientRect().top - (window.innerHeight/1.8)<= 0){
     lemon.style.left = '0';
     mushroom.style.right = '16.592vw';
   }

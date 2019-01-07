@@ -294,7 +294,7 @@ main{
 .yellowParaAnimOne{
   position: relative;
   transition: 1s;
-  top:8vw;
+  top:14vw;
   font-size:5.8vw;
   margin-bottom: -1.5vw;
 }
@@ -415,7 +415,7 @@ main{
 
 .fromTheSectionParagAnim{
   transition: 1s;
-  top: 10vw;
+  top: 17vw;
   font-family: 'LeagueGothic-CondensedRegular';
   position: relative;
   text-align: center;
@@ -436,7 +436,7 @@ main{
 
 .barPic{
   transition: 1s;
-  background-position: 0 -10vw;
+  background-position: 0 -18vw;
   position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1194,8 +1194,8 @@ form button{
     margin-top: 6.25vw;
     z-index: 2;
   }
-  .burgerDivMob div{
-    height: 10px;
+  .burgerDiv div{
+    height: 3px;
     margin-top: 1vw;
   }
   .wineDivSquare{
@@ -1295,6 +1295,9 @@ form button{
     text-align: center;
     font-size: 12.5vw;
   }
+  .lemon{
+    left: -4vw;
+  }
   .mushroom{
     display: none;
   }
@@ -1340,7 +1343,12 @@ form button{
   .threePicDivClass div p:nth-child(2){
     font-size: 18vw;
   }
-
+  /* IMAGE SECTION */
+  .imageSection{
+    height: 71.875vw;
+    background-size: 200% 100%;
+    background-position: 70% center;
+  }
   /* STICKY MENU */
   .stickyMenu{
 
@@ -1361,7 +1369,7 @@ form button{
     margin-right: 7vw;
   }
   .stickyBurgerDiv div{
-    height: 10px;
+    height: 3px;
     margin-top: 1vw;
   }
 }
