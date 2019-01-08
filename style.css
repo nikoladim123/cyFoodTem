@@ -385,7 +385,7 @@ main{
 .topSocialMedia{
   display: flex;
   justify-content:  center;
-  position: absolute;
+  position: relative;
   bottom: 3px;
   margin-left: 50%;
   width: 20vw;
@@ -1234,7 +1234,7 @@ form button{
   }
   /* MAIN SECTION*/
   main{
-    height: 159.3vw;
+    height: 164.3vw;
     background-image: none;
   }
   .yellowBoxBar{
@@ -1242,7 +1242,7 @@ form button{
     margin: 0;
     left:0;
     width: 100%;
-    height: 161.3vw;
+    height: 164.3vw;
   }
   .whiteLine{
     width: 56.25vw;
