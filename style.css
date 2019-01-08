@@ -547,9 +547,10 @@ main{
 }
 
 .menuPng{
+  z-index: 1;
   position: absolute;
   background-repeat: no-repeat;
-  background-position: 0 -9vw;
+  background-position: 0 -14vw;
   transition: 1s;
   background-size: 100% 100%;
   background-image: url('img/png/menu.png');
@@ -1293,6 +1294,7 @@ form button{
     margin: 0;
     margin-top: 7.812vw;
     text-align: center;
+    margin-left: 2vw;
     font-size: 12.5vw;
   }
   .lemon{
@@ -1306,7 +1308,7 @@ form button{
     height: 43.75vw;
   }
   .fromTheSectionParagAnim{
-    margin-top:23vw;
+    margin-top:25vw;
     font-size: 17.81vw;
   }
   /* BAR SECTION */
@@ -1349,6 +1351,78 @@ form button{
     background-size: 200% 100%;
     background-position: 70% center;
   }
+  .imageSectionParagAnim{
+    top:30vw;
+    font-size: 17.81vw;
+  }
+  .menuPng{
+    width: 29.125vw;
+    height: 17.25vw;
+    left: -14.55vw;
+  }
+  /* grid Images Section */
+  .gridImagesSection{
+    height: 100vh;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gridImagesSection div:nth-child(9){display: none;}
+
+  /* hamburger section */
+  .hamburgerSection{
+    height: 175.14vw;
+    background-size: 300% 110.57vw;
+    background-repeat: no-repeat;
+  }
+  .hamburgerSection::after{
+    content: '';
+    display: block;
+    height: 64.57vw;
+    width: 100%;
+    position: absolute;
+    top:110.57vw;
+    background-image: url('img/mobile/redBurgerBG.jpg');
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+  .hambugerButtonBox{
+    display: none;
+  }
+  .advertBox{
+    margin-top: 4.299vw;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 98.85vw;
+  }
+  .advertBox div{
+    width: 60.85vw;
+    height: 20.57vw;
+    margin-top: 3.428vw;
+  }
+  .advertBox div:nth-child(3){
+    width: 77.142vw;
+  }
+  /* IMAGE SECTION TWO */
+  .imageSectionTwo{
+    height: 67.14vw;
+  }
+  .imageSectionTwoParagAnim{
+    top:30vw;
+    font-size: 17.81vw;
+  }
+  .blackBandMenuText{
+    width: 29.125vw;
+    height: 17.25vw;
+    left: -14.55vw;
+    background-position: center -20vw;
+  }
+  .blackBandMenu{
+    height: 30vw;
+  }
+
+
+
   /* STICKY MENU */
   .stickyMenu{
 
@@ -1367,9 +1441,25 @@ form button{
   .stickyBurgerDiv{
     width: 10.31vw;
     margin-right: 7vw;
+    margin-top: 5vw;
   }
   .stickyBurgerDiv div{
     height: 3px;
     margin-top: 1vw;
+  }
+  /* BURGER MENU OVERLAY */
+  .burgerBlackBoxText h2{
+    font-size: 13.714vw;
+  }
+  .burgerBlackBoxText p{
+    font-size: 6.857vw;
+  }
+  .closeBox{
+    margin-top: 4vw;
+    width:8vw;
+    height: 8vw;
+  }
+  .closeBox div:nth-child(1){
+    margin-top: 4vw;
   }
 }

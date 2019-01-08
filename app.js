@@ -13,13 +13,13 @@ burgerDiv[1].addEventListener('click',function(){
 })
 function openMenu(){
   stickySwitch =1;
-  burgerMenuOverlayWhite.style.width = "101%";
+  burgerMenuOverlayWhite.style.width = "102%";
   stickyMenu.style.height = '0vw';
   setTimeout(function(){
     if(window.innerWidth > window.innerHeight){
     burgerOverlayBlackBox.style.width = '20vw';
   }else{
-    burgerOverlayBlackBox.style.width = '50vw';
+    burgerOverlayBlackBox.style.width = '75vw';
   }
     wholePageOverlay.style.filter = 'blur(10px)';
   },1000)
