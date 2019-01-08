@@ -381,12 +381,13 @@ main{
   color:rgb(243,112,7);
   font-size: 4.4vw;
   margin-left: 19.185vw;
+  margin-bottom: 0;
 }
 .topSocialMedia{
   display: flex;
   justify-content:  center;
   position: relative;
-  bottom: 3px;
+  /* margin-top: 2vw; */
   margin-left: 50%;
   width: 20vw;
   left:-10vw;
@@ -759,7 +760,7 @@ color: white;
   background-size: 100% 100%;
   background-repeat:  no-repeat;
   background-position: 0 -200px;
-  background-image: url('img/png/Socials.png');
+  background-image: url('img/png/instagramPNG.png');
   width: 18.38vw;
   height: 6.523vw;
   margin-left: 50%;
@@ -965,7 +966,7 @@ form button{
 
 .socialMedia{
   position: absolute;
-  width: 18.925vw;
+  width: 20vw;
   height: 2.444vw;
   right: 0px;
   margin-top: 1.777vw;
@@ -980,10 +981,12 @@ form button{
   text-decoration: none;
   border-radius: 50%;
   background-color: white;
-  color:rgb(186,19,19);
-  margin-left: 1vw;
+  color:black;
+  border: 2px solid black;
+  margin-left: 1.5vw;
   transition: 0.3s;
   opacity: 0.4;
+  background-color: transparent;
 }
 .fa-facebook:hover,
 .fa-twitter:hover,
@@ -991,6 +994,17 @@ form button{
 .fa-youtube:hover,
 .fa-snapchat-ghost:hover{
   opacity: 1;
+  border: 2px solid red;
+  color:red;
+}
+
+.socialMedia .fa-facebook:hover,
+.socialMedia .fa-twitter:hover,
+.socialMedia .fa-instagram:hover,
+.socialMedia .fa-youtube:hover,
+.socialMedia .fa-snapchat-ghost:hover{
+  background-color: white;
+  border: 2px solid white;
 }
 
 .boleroFooterImg{
@@ -1234,7 +1248,7 @@ form button{
   }
   /* MAIN SECTION*/
   main{
-    height: 164.3vw;
+    height: 169.3vw;
     background-image: none;
   }
   .yellowBoxBar{
@@ -1242,7 +1256,7 @@ form button{
     margin: 0;
     left:0;
     width: 100%;
-    height: 164.3vw;
+    height: 169.3vw;
   }
   .whiteLine{
     width: 56.25vw;
@@ -1306,6 +1320,9 @@ form button{
     text-align: center;
     margin-left: 2vw;
     font-size: 12.5vw;
+  }
+  .topSocialMedia{
+    margin-top: 2vw;
   }
   .lemon{
     left: -4vw;
@@ -1418,7 +1435,7 @@ form button{
   }
   /* IMAGE SECTION TWO */
   .imageSectionTwo{
-    height: 67.14vw;
+    height: 63.14vw;
   }
   .imageSectionTwoParagAnim{
     top:30vw;
@@ -1443,9 +1460,10 @@ form button{
     font-size: 17.81vw;
   }
   .specials{
-    width: 29.125vw;
+    margin-top: -8vw;
+    width: 35vw;
     height: 17.25vw;
-    left: -14.55vw;
+    left: -17.5vw;
     background-position: center -20vw;
   }
   .gridBoxSpecial{
@@ -1582,6 +1600,8 @@ form button{
   }
 
   .blackFooterText{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     background: black;
     height: auto;
   }
