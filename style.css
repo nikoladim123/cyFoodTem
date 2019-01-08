@@ -244,7 +244,7 @@ main{
   background-image: url('img/sectioTwoBackground.jpg');
   background-size: 100% 100%;
   width: 100%;
-  height: 65.555vw;
+  min-height: 65.555vw;
   border-bottom: -11.85vw solid rgb(176,17,22);
 }
 
@@ -268,7 +268,7 @@ main{
   transition: 3s;
   /* background-color: #f0cd3c; */
   width: 53.7vw;
-  height: 67.555vw;
+  min-height: 67.555vw;
 }
 .whiteLine{
   position: relative;
@@ -387,7 +387,6 @@ main{
   display: flex;
   justify-content:  center;
   position: relative;
-  /* margin-top: 2vw; */
   margin-left: 50%;
   width: 20vw;
   left:-10vw;
@@ -958,19 +957,18 @@ form button{
   font-family: 'RobotoSlab-Regular';
   padding-top: 0.1px;
   position: relative;
-  height: 36.69vw;
+  min-height: 36.69vw;
   background-color: rgb(196,20,20);
   border-bottom: 2px solid rgb(217,185,86);
   text-align: center;
 }
+.socialMediaBot{
+  margin-right: 1.2vw;
+  margin-bottom: 1vw;
+}
 
 .socialMedia{
-  position: absolute;
-  width: 20vw;
-  height: 2.444vw;
-  right: 0px;
-  margin-top: 1.777vw;
-  margin-right: 1.481vw;
+  position: relative;
 }
 .fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube, .fa-snapchat-ghost {
   padding: 0.3vw;
@@ -1248,7 +1246,7 @@ form button{
   }
   /* MAIN SECTION*/
   main{
-    height: 169.3vw;
+    min-height: 18.3vw;
     background-image: none;
   }
   .yellowBoxBar{
@@ -1256,7 +1254,7 @@ form button{
     margin: 0;
     left:0;
     width: 100%;
-    height: 169.3vw;
+    min-height: 18.3vw;
   }
   .whiteLine{
     width: 56.25vw;
@@ -1322,6 +1320,7 @@ form button{
     font-size: 12.5vw;
   }
   .topSocialMedia{
+    padding-bottom: 5vw;
     margin-top: 2vw;
   }
   .lemon{
@@ -1525,7 +1524,8 @@ form button{
   }
   /* GET IN TOUCH IMAGE BOX */
   .getinTouchImageBox{
-    height: 52vw;
+    height: auto;
+    min-height: 52vw;
   }
   .getInTouchYellowBox{
     position: relative;
@@ -1533,7 +1533,8 @@ form button{
     left: 0;
     width: 100%;
     z-index: 10;
-    height: 62vw;
+    height: auto;
+    min-height: 62vw;
     overflow: hidden;
   }
   .getInTouchYellowBox h2{
@@ -1568,9 +1569,10 @@ form button{
     font-size: 4vw;
     margin-left: 50%;
     left:-27vw;
+    margin-bottom: 2vw;
   }
   .footerRed{
-    height: auto;
+    min-height: 50vw;
   }
   .footerTextOne p{
     font-size: 2.4vw;
@@ -1583,9 +1585,9 @@ form button{
     margin-bottom: 6vw;
   }
 
-  .socialMedia{
+  .socialMediaBot{
     right: auto;
-    bottom: 3vw;
+    bottom: 5vw;
     margin-left: 50%;
     left: -25vw;
     width: 50vw;
