@@ -1054,13 +1054,18 @@ form button{
 .blackFooterText{
   color:white;
   text-align: center;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .blackFooterText p{
-  opacity: 0.5;
+  opacity: 0.35;
   font-family: 'RobotoSlab-Light';
-  font-size: 0.9vw;
+  font-size: 0.79vw;
   margin: 0.25vw;
   margin-top: 0.35vw;
+  cursor: pointer;
 }
 
 /* BURGER MENU OVERLAY */
